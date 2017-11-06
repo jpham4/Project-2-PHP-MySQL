@@ -8,9 +8,9 @@ $eval_clearance;
 
 
 $host ='localhost';
-$user = 'root';
-$pass ='';
-$db = "project2";
+$user = 'togunyale1';
+$pass ='togunyale1';
+$db = 'togunyale1';
 
 $conn = new mysqli($host, $user, $pass, $db);
 
@@ -54,6 +54,12 @@ if($checked == 1){
 }else{
 	header("Location:NoAccount.php");
 }
+
+
+
+
+
+
 
 
 ?>

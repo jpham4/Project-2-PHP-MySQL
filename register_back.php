@@ -1,9 +1,9 @@
 <?php
 
 $host ='localhost';
-$user = 'root';
-$pass ='';
-$db = "project2";
+$user = 'togunyale1';
+$pass ='togunyale1';
+$db = "togunyale1";
 
 $newuser = $_POST["username"];
 $newpass = $_POST["password"];

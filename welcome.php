@@ -4,9 +4,9 @@
 session_start();
 
 $host ='localhost';
-$user = 'root';
-$pass ='';
-$db = "project2";
+$user = 'togunyale1';
+$pass ='togunyale1';
+$db = "togunyale1";
 
 $center = "center";
 
