@@ -52,7 +52,8 @@
 	<div>
 		
 <p align="center">
-	
+
+	<input type="submit" value="Login as Guest" onclick="window.location.href='welcome.php'" />	
 	<input type="button" value="Create New Account" onclick="window.location.href='register.php'" />
 
 </p>

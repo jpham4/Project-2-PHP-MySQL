@@ -20,9 +20,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 
-
-echo "<h1 align = $center > Welcome, $username </h1>";
-echo "<h2 align = $center > Clearance Level : $level_clear  </h2>";
+if($level_clear == 'Guest';){
+	echo "<h1 align = $center > Welcome, User </h1>";
+	echo "<h2 align = $center > Loggen in as $level_clear  </h2>";
+}else{
+	echo "<h1 align = $center > Welcome, $username </h1>";
+	echo "<h2 align = $center > Loggen in as $level_clear  </h2>";
+	}
 
 
 ?>
