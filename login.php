@@ -30,7 +30,7 @@ $checked = 0;
 //$row = $result->fetch_assoc();
 
 while($row = $result->fetch_assoc()) {
-	if($row["username"] == $login_user && $row["password"] == $login_pass){
+	if($row["username"] == $login_user && $row["password"]){
 		$checked = 1;
 		$eval_clearance = $row["clearance"];
 		break;
@@ -38,13 +38,13 @@ while($row = $result->fetch_assoc()) {
 }
 // Check to get the clearance level that the 
 if($checked == 1){
-	if($eval_clearance == 'Admin'){
+	if($eval_clearance == 0){
 		$login_clearance = "Admin";
 	}
-	else if($eval_clearance == 'User'){
-		$login_clearance = "User";
+	else if($eval_clearance == 1){
+		$login_clearance = "Employee";
 	}
-	else if($eval_clearance == 'Guest'){
+	else if($eval_clearance == 2){
 		$login_clearance = "Guest";
 	}
 
