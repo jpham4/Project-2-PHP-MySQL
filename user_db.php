@@ -5,12 +5,12 @@
 	Inventory
 </title>
 <?php
-	$db_link = db_connect("user_db");
+	$db_link = db_connect("schowdhury13");
 	$query = "SELECT * FROM userInventory";
 	$result = mysql_query($query)
 		or die("SQL Query failed");
 
-	$fields = mysql_list_fields("user_db", "userInventory");
+	$fields = mysql_list_fields("schowdhury13", "userInventory");
 	$num_columns = mysql_num_fields($fields);
 
 echo '<table border="1">', "\n";

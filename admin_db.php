@@ -1,16 +1,16 @@
-<?php require_once("admin_db_connect.php"); ?>
+<?php require_once("admin_db_connection.php"); ?>
 <html>
 <head>
 <title>
 	Inventory
 </title>
 <?php
-	$db_link = db_connect("admin_db");
+	$db_link = db_connect("schowdhury13");
 	$query = "SELECT * FROM mainInventory";
 	$result = mysql_query($query)
 		or die("SQL Query failed");
 
-	$fields = mysql_list_fields("admin_db", "mainInventory");
+	$fields = mysql_list_fields("schowdhury13", "mainInventory");
 	$num_columns = mysql_num_fields($fields);
 
 echo '<table border="1">', "\n";
