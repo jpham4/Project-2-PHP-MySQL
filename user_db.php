@@ -1,4 +1,5 @@
-<?php require_once("user_db_connection.php");
+<?php require_once("user_db_connection.php"); ?>
+<?php
 	$db_link = db_connect("schowdhury13");
 	$query = "SELECT * FROM userInventory";
 	$result = mysql_query($query)
